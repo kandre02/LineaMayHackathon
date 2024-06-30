@@ -110,17 +110,34 @@ contract SafeSend is ReentrancyGuard {
 
         transfers[senderAddr].claimed = true;
         uint256 amount = transfers[senderAddr].amount;
-        transfers[senderAddr].receiver.transfer(amount);
+
+        // Reset the transfer data
+        transfers[senderAddr] = Transfer({
+            sender: payable(address(0)),
+            receiver: payable(address(0)),
+            amount: 0,
+            claimed: true
+        });
+
+        payable(msg.sender).transfer(amount);
 
         emit EtherClaimed(transfers[senderAddr].sender, msg.sender, amount);
     }
 
     function claimBackEther() external nonReentrant onlySender(msg.sender) notClaimed(msg.sender) {
-        transfers[msg.sender].claimed = true;
         uint256 amount = transfers[msg.sender].amount;
-        transfers[msg.sender].sender.transfer(amount);
 
-        emit EtherClaimedBack(transfers[msg.sender].sender, amount);
+        // Reset the transfer data
+        transfers[msg.sender] = Transfer({
+            sender: payable(address(0)),
+            receiver: payable(address(0)),
+            amount: 0,
+            claimed: true
+        });
+
+        payable(msg.sender).transfer(amount);
+
+        emit EtherClaimedBack(msg.sender, amount);
     }
 
     // NFT functions
@@ -145,17 +162,34 @@ contract SafeSend is ReentrancyGuard {
 
         nftTransfers[senderAddr].claimed = true;
         uint256 tokenId = nftTransfers[senderAddr].tokenId;
+
+        // Reset the NFT transfer data
+        nftTransfers[senderAddr] = NFTTransfer({
+            sender: address(0),
+            receiver: address(0),
+            tokenId: 0,
+            claimed: true
+        });
+
         efrogsNFT.transferFrom(address(this), msg.sender, tokenId);
 
         emit NFTClaimed(nftTransfers[senderAddr].sender, msg.sender, tokenId);
     }
 
     function claimBackEfrogs() external nonReentrant onlyNFTSender(msg.sender) nftNotClaimed(msg.sender) {
-        nftTransfers[msg.sender].claimed = true;
         uint256 tokenId = nftTransfers[msg.sender].tokenId;
+
+        // Reset the NFT transfer data
+        nftTransfers[msg.sender] = NFTTransfer({
+            sender: address(0),
+            receiver: address(0),
+            tokenId: 0,
+            claimed: true
+        });
+
         efrogsNFT.transferFrom(address(this), msg.sender, tokenId);
 
-        emit NFTClaimedBack(nftTransfers[msg.sender].sender, tokenId);
+        emit NFTClaimedBack(msg.sender, tokenId);
     }
 
     // Token functions
@@ -180,17 +214,34 @@ contract SafeSend is ReentrancyGuard {
 
         tokenTransfers[senderAddr].claimed = true;
         uint256 amount = tokenTransfers[senderAddr].amount;
+
+        // Reset the token transfer data
+        tokenTransfers[senderAddr] = TokenTransfer({
+            sender: address(0),
+            receiver: address(0),
+            amount: 0,
+            claimed: true
+        });
+
         croakToken.transfer(msg.sender, amount);
 
         emit TokenClaimed(tokenTransfers[senderAddr].sender, msg.sender, amount);
     }
 
     function claimBackCROAK() external nonReentrant onlyTokenSender(msg.sender) tokenNotClaimed(msg.sender) {
-        tokenTransfers[msg.sender].claimed = true;
         uint256 amount = tokenTransfers[msg.sender].amount;
+
+        // Reset the token transfer data
+        tokenTransfers[msg.sender] = TokenTransfer({
+            sender: address(0),
+            receiver: address(0),
+            amount: 0,
+            claimed: true
+        });
+
         croakToken.transfer(msg.sender, amount);
 
-        emit TokenClaimedBack(tokenTransfers[msg.sender].sender, amount);
+        emit TokenClaimedBack(msg.sender, amount);
     }
 
     // Getter functions
