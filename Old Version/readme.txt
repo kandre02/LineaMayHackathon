@@ -1,3 +1,5 @@
+This is my work in MAY! Please check updated files for the recent.
+
 Youtube Presentation Video: https://youtu.be/KV_2iHnx3ME
 
 Github link: https://github.com/kandre02/LineaMayHackathon
