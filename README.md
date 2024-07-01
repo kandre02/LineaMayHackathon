@@ -59,4 +59,4 @@ Contact:
 - For any inquiries or support, please contact me.
 
 License:
-- This project is licensed under the MIT License.
+- Open Source
