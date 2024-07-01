@@ -3,6 +3,7 @@ SafeSend DApp - Linea Hackathon 2024: Dev Cook-Off with Linea
 ![logo](https://github.com/kandre02/LineaMayHackathon/assets/75036508/e4c2f8d0-2fb8-482f-bae8-fd0d0aca9711)
 
 Author: Konstantinos Andreou
+
 Youtube Video Demostrating: https://youtu.be/ebzl8gx4L5Y
 
 Description:
