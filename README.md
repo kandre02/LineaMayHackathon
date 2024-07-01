@@ -51,10 +51,6 @@ Getting Started:
 3. Navigate 'cd Front-End-UI\simple-dapp-v2'
 4. Start the development server: `npm run dev`
 
-Deployment:
-- Ensure the contract addresses for efrogsNFTAddress and croakTokenAddress are correctly set.
-- Compile and deploy the contract using Remix IDE or other compatible Ethereum development environments.
-
 Contact:
 - For any inquiries or support, please contact me.
 
