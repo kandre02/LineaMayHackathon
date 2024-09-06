@@ -48,7 +48,7 @@ If a transaction fails, users can easily reclaim their tokens using the Claim Ba
 
 ## Live Demo
 
-Experience SafeSend yourself with our live demo: [SafeSend Demo](https://safesendlinea.netlify.app/)
+Experience SafeSend yourself: [SafeSend](https://safesendlinea.netlify.app/)
 
 ## Getting Started
 
