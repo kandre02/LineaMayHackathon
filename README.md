@@ -43,6 +43,17 @@ The smart contract stores all relevant transaction details—such as sender and 
 
 If a transaction fails, users can easily reclaim their tokens using the Claim Back feature. This is particularly useful for beginners who may be worried about making mistakes when sending tokens.
 
+## Partners I Used
+
+- **Remix**: for contract deployment
+- **OpenZeppelin**: contract wizard for secure smart contract development
+- **React**: A JavaScript library for building user interfaces
+- **Next.js**: React framework for server-side rendering
+- **Thirdweb SDK**: Simplifies wallet connection and contract interaction
+- **ethers.js**: A library for interacting with the Ethereum blockchain
+- **WalletConnect**: For easy multi-chain wallet integration
+- **web3.js**: For blockchain interaction and contract integration
+
 ## Special Thanks
 
 - **Linea**: For making this hackathon opportunity.
