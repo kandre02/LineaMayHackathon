@@ -1,5 +1,7 @@
 
 # SafeSend DApp
+![logo](https://github.com/user-attachments/assets/c62ce9b5-e6f1-4eb1-9282-79570d2bb306)
+
 
 SafeSend is a smart contract solution designed to address a critical issue in the blockchain space: the loss of funds due to human errors like mistyped wallet addresses. This project, started as an idea in Linea Dev Cook-off Hackathon, adds an extra layer of security to the blockchain by allowing the sender to claim back their crypto if the receiver doesn’t receive it. The user interface is designed to educate people on how to send crypto correctly, helping to prevent these costly mistakes. With an estimated $3.8 billion in crypto lost last year due to such errors, this is an important problem to solve. Expanding the Linea Network with SafeSend not only educates users but also offers a practical solution to a major issue in the crypto world.
 
