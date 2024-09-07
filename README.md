@@ -103,7 +103,7 @@ Experience SafeSend yourself: [SafeSend](https://safesendlinea.netlify.app/)
 - Secured the smart contract.
 - Deployed the smart contract on the Linea Mainnet.
 - Added an "About Page".
-- fixed bugs and added "approval methods" for eFrogs nft and $Croak Token. (since now we are mainnet, I tested these type of transfers and updated my functions :D ! )
+- fixed bugs and added "approval methods" for eFrogs nft and $Croak Token. (since now we are live on mainnet, I tested these type of transfers and updated my functions :D ! )
 
 ## Author
 
