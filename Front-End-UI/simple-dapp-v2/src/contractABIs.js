@@ -225,4 +225,31 @@ export const contractABI = [
   }
 ];
 
-export const contractAddress = "0x46a60ED30B1Ff8f99bb773Bae217221c7CE19e02";  
+// Contract address for SafeSend
+export const contractAddress = "0x46a60ED30B1Ff8f99bb773Bae217221c7CE19e02";
+
+// CROAK Token ABI (minimal subset needed for interaction)
+export const croakTokenABI = [
+  "function approve(address spender, uint256 amount) external returns (bool)",
+  "function decimals() view returns (uint8)",
+  "function allowance(address owner, address spender) view returns (uint256)",
+  "function balanceOf(address account) external view returns (uint256)",
+  "function transferFrom(address sender, address recipient, uint256 amount) external returns (bool)"
+];
+
+// eFrogs NFT ABI (minimal subset needed for interaction)
+export const efrogsNFTABI = [
+  "function approve(address to, uint256 tokenId) external",
+  "function setApprovalForAll(address operator, bool approved) external",
+  "function isApprovedForAll(address owner, address operator) external view returns (bool)",
+  "function ownerOf(uint256 tokenId) external view returns (address)",
+  "function transferFrom(address from, address to, uint256 tokenId) external",
+  "function getApproved(uint256 tokenId) external view returns (address)" // Added getApproved function
+];
+
+
+// CROAK Token Address
+export const croakTokenAddress = '0xaCb54d07cA167934F57F829BeE2cC665e1A5ebEF';
+
+// eFrogs NFT Address
+export const efrogsNFTAddress = '0x194395587d7b169E63eaf251E86B1892fA8f1960';

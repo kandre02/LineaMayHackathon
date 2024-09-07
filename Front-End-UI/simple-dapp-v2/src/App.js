@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import './App.css';
-import { contractABI, contractAddress } from './contractABI';
+import { contractABI, contractAddress } from './contractABIs';
 
 function App() {
   const [account, setAccount] = useState('');
