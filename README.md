@@ -59,6 +59,11 @@ If a transaction fails, users can easily reclaim their tokens using the Claim Ba
 - **Linea**: For making this hackathon opportunity.
 - **HackQuest.io**: For promoting this hackathon and supporting projects of blockchain technology.
 
+## Demo Videos
+
+- **Pitch video**: [Watch the Pitch](https://youtu.be/9coSaJplZ2U)
+- **Demo video**: [Watch the Demo](https://youtu.be/0U2ohesnzKA)
+
 ## Live Demo
 
 Experience SafeSend yourself: [SafeSend](https://safesendlinea.netlify.app/)
@@ -97,13 +102,17 @@ Experience SafeSend yourself: [SafeSend](https://safesendlinea.netlify.app/)
     npm run build
     ```
 
+
 ## Progress for August
 
 - Updated the User Interface for a softer and more modern experience.
 - Secured the smart contract.
 - Deployed the smart contract on the Linea Mainnet.
+- Fixed bugs and added "approval methods" for eFrogs NFT and $CROAK Token (using Croak Contract ABI to getApproved and eFrogs Contract ABI).
+- Tested these types of transfers and updated the functions.
+- Updated the DApp to run on mobile phone browsers!
 - Added an "About Page".
-- fixed bugs and added "approval methods" for eFrogs nft and $Croak Token. (since now we are live on mainnet, I tested these type of transfers and updated my functions :D ! )
+
 
 ## Author
 
